@@ -1,8 +1,10 @@
+# Importando a biblioteca de utilização.
 import pandas as pd
-# Loop para ler cada arquivo e converter em dataframe
+# Indicando o caminho do CSV
 from google.colab import drive
 drive.mount ('/content/drive')
 path_in = '/content/drive/My Drive/PYTHON/Dados Cargas'
+# Loop para ler cada arquivo e converter em dataframe
 df = pd.read_csv(path_in + "/2015Carga.txt", low_memory=False, sep=";", encoding="UTF-8", decimal=",")
 df2 = pd.read_csv(path_in + "/2016Carga.txt", low_memory=False, sep=";", encoding="UTF-8", decimal=",")
 df3 = pd.read_csv(path_in + "/2017Carga.txt", low_memory=False, sep=";", encoding="UTF-8", decimal=",")
